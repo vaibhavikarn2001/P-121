@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-120</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Birthstone+Bounce:wght@500&family=Fredoka+One&family=Satisfy&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="https://img.freepik.com/free-vector/pink-oil-painted-canvas-background_53876-93727.jpg?size=626&ext=jpg">
+    <h1 class="btn-warning">Case Study<img style="margin:20px; border-radius:20px; width:90px; height:70px;"src="https://visme.co/blog/wp-content/uploads/2020/06/Header_1200.gif"> 
+    <hr>
+    <center><div style="float:none;" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <p >Google Lens <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">
+        </p>
+        <br>
+        V.S 
+        <br>
+        <p class="btn btn-primary important">MOBILENET</p>
+        <br>
+
+    </div>
+    
+</center>
+    
+</h1>
+
+<div id="obj1">
+    <ol>
+        <h2 style="font-size:40px; text-align:center; font-family: 'Satisfy', cursive;">1.Crayons</h2>
+        <center style="font-family: 'Fredoka One', cursive;">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Crayones_cera.jpg"class="img-responsive img1">
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">: Crayons</h3>
+           
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on MobileNet: Pencil Box</h3> 
+          
+              <h2 style="font-family: 'Fredoka One', cursive; color:white; font-size: 30px;"class="col-sm-4 col-xs-12">Result: Google Lens is more accurate</h2> 
+         
+         
+
+    </ol>
+<br>
+</center>
+<br>
+<br>
+</div>
+<div id="obj2">
+    <ol>
+        <h2 style="font-size:40px; text-align:center; font-family: 'Satisfy', cursive;">2.Handbag</h2>
+        <center style="font-family: 'Fredoka One', cursive;
+        ">
+                     <img src="https://i.postimg.cc/NM5LbdWD/4px-BW84-n2a-GZJPv2-Q-uysu-Ql-RKXWAtkzmu-Afq-DQITcu-O7-FYe-adb-Vn-ntv-R8164-KOx-W2k2wvvogiy5p-Ufbs-FRLhq-Cj-VKTx-Nc.jpg"class="img-responsive img1">
+
+        
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">:Handbag </h3>
+            <span id="res_on_gl"></span>
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on MobileNet: Mailbag</h3> </h3>
+            <h2 style="font-family: 'Fredoka One', cursive; color:white; font-size: 30px;"class="col-sm-4 col-xs-12">Result:Google Lens is more accurate</h2> 
+
+    
+        </center>
+
+    </ol>
+<br>
+
+</div>
+<br>
+<section id="obj3">
+    <ol>
+        <br>
+        <br>
+        <h2 style="font-size:40px;color:black; text-align:center; font-family: 'Satisfy', cursive;">3.Board Game</h2>
+        <center style="font-family: 'Fredoka One', cursive;
+        ">
+                                 <img src="https://media.istockphoto.com/photos/various-board-games-leisure-hobby-background-games-picture-id1076877918?b=1&k=20&m=1076877918&s=170667a&w=0&h=zgy2uA_T3tVFub7xCXpn3_yte3j03XHymEaz7VgYJFs="class="img-responsive img1">
+
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">:Board Game </h3>
+            <span id="res_on_gl"></span>
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on MobileNet: Casette</h3> </h3>
+            <h2 style="font-family: 'Fredoka One', cursive; color:white; font-size: 30px;"class="col-sm-4 col-xs-12">Result:Google Lens is more accurate</h2> 
+
+        </center>
+
+    </ol>
+<br>
+
+</section>
+<br>
+<div id="obj4">
+    <ol>
+        <br>
+        <br>
+        <h2 style="font-size:40px;color:black; text-align:center; font-family: 'Satisfy', cursive;">4.Bicycle</h2>
+        <center style="font-family: 'Fredoka One', cursive;
+        ">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bicycle-on-grassy-field-in-park-royalty-free-image-1589916167.jpg?crop=0.721xw:0.541xh;0,0.317xh&resize=1200:*"class="img-responsive img1"> 
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">: Bicycle</h3>
+            <span id="res_on_gl"></span>
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on MobileNet: Fireguard</h3> </h3>
+            <h2 style="font-family: 'Fredoka One', cursive; color:white; font-size: 30px;"class="col-sm-4 col-xs-12">Result:Google Lens is more accurate</h2> 
+
+        </center>
+
+    </ol>
+<br>
+
+</div>
+<br>
+<section id="obj5">
+    <ol>
+        <br>
+        <br>
+        <h2 style="font-size:40px;color:black; text-align:center; font-family: 'Satisfy', cursive;">5.Laptop</h2>
+        <center style="font-family: 'Fredoka One', cursive;
+        ">
+                      <img src="                      https://cdn.thewirecutter.com/wp-content/uploads/2020/04/laptops-lowres-2x1--1024x512.jpg
+                      " class="img-responsive img1"> 
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">: Laptop</h3>
+            <span id="res_on_gl"></span>
+            <h3 style="color:green; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on MobileNet: Computer </h3> </h3>
+            <h2 style="font-family: 'Fredoka One', cursive; color:white; font-size: 30px;"class="col-sm-4 col-xs-12">Result:Google Lens is more accurate</h2> 
+
+        </center>
+
+    </ol>
+<br>
+
+</section>
+<br>
+<section id="obj6">
+    <ol>
+        <br>
+        <br>
+        <h2 style="font-size:40px;color:black; text-align:center; font-family: 'Satisfy', cursive;">6.Sunflowers</h2>
+        <center style="font-family: 'Fredoka One', cursive;
+        ">
+                        <img src="https://images.theconversation.com/files/226736/original/file-20180709-122271-nk7jdx.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop"class="img-responsive img1"> 
+                      
+
+            <h3 style="color:black; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">: Sunflowers</h3>
+            <span id="res_on_gl"></span>
+            <h3 style="color:black; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on MobileNet: Snow leopard </h3> </h3>
+            <h2 style="font-family: 'Fredoka One', cursive; color:white; font-size: 30px;"class="col-sm-4 col-xs-12">Result:Google Lens is more accurate</h2> 
+
+        </center>
+
+    </ol>
+<br>
+
+</section>
+<br>
+<section id="obj7">
+    <ol>
+        <br>
+        <br>
+        <h2 style="font-size:40px;color:black; text-align:center; font-family: 'Satisfy', cursive;">7.Glares</h2>
+        <center style="font-family: 'Fredoka One', cursive;
+        ">
+                                    <img src="https://rukminim1.flixcart.com/image/714/857/sunglass/s/b/y/g212ctmlmc-glares-by-titan-free-size-original-imaemwb69zhthvnz.jpeg?q=50"class="img-responsive img1"> 
+
+            <h3 style="color:black; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">:Glares </h3>
+            <span id="res_on_gl"></span>
+            <h3 style="color:black; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on MobileNet: Mouse</h3> </h3>
+            <h2 style="font-family: 'Fredoka One', cursive; color:white; font-size: 30px;"class="col-sm-4 col-xs-12">Result:Google Lens is more accurate</h2> 
+
+        </center>
+
+    </ol>
+<br>
+
+</section>
+<br>
+<section id="obj8">
+    <ol>
+        <br>
+        <br>
+        <h2 style="font-size:40px;color:white; text-align:center; font-family: 'Satisfy', cursive;">8.Cricket Bat</h2>
+        <center style="font-family: 'Fredoka One', cursive;
+        ">
+              <img src="https://thumbs.dreamstime.com/b/cricket-bat-ball-place-ground-pitch-green-grass-t-twenty-ipl-190746139.jpg"class="img-responsive img1"> 
+            <h3 style="color:black; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on <img src="219-2197639_clip-art-lens-logo-google-lens-png-download-removebg-preview.png" style="width:90px; height:70px;">: Bat of cricket</h3>
+            <span id="res_on_gl"></span>
+            <h3 style="color:black; text-align:center; float:none;" class="col-sm-4 col-xs-12">Output on MobileNet: Plectron </h3> </h3>
+            <h2 style="font-family: 'Fredoka One', cursive; color:white; font-size: 30px;"class="col-sm-4 col-xs-12">Result:Google Lens is more accurate</h2> 
+
+        </center>
+
+    </ol>
+<br>
+
+</section>
+<center>
+    <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        I have tested 8 images and found that Google Lens is much more accurate than MobileNet.
+    </h4>
+</center>
+
+</body>
+</html>
